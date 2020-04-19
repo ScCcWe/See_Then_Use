@@ -1,3 +1,35 @@
-*.env
+# flask
+.env
+
+# database
 *.db
+data.db
+
+# env
+env/
+venv/
+*.env
+
+# pycharm default config
+/.idea
+
+# pyinstaller
+dist/
 *.dist
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Python
+*.py[cod]
+*.so
+*.egg
+*.egg-info
+
+# log
+logs/
+
+# migrate
+migrations/
