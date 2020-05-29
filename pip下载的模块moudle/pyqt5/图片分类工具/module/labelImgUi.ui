@@ -1,0 +1,1896 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1931</width>
+    <height>1020</height>
+   </rect>
+  </property>
+  <property name="palette">
+   <palette>
+    <active>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>214</red>
+        <green>213</green>
+        <blue>183</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>234</red>
+        <green>234</green>
+        <blue>219</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>107</red>
+        <green>106</green>
+        <blue>91</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>143</red>
+        <green>142</green>
+        <blue>122</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>214</red>
+        <green>213</green>
+        <blue>183</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>234</red>
+        <green>234</green>
+        <blue>219</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </active>
+    <inactive>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>214</red>
+        <green>213</green>
+        <blue>183</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>234</red>
+        <green>234</green>
+        <blue>219</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>107</red>
+        <green>106</green>
+        <blue>91</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>143</red>
+        <green>142</green>
+        <blue>122</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>214</red>
+        <green>213</green>
+        <blue>183</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>234</red>
+        <green>234</green>
+        <blue>219</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </inactive>
+    <disabled>
+     <colorrole role="WindowText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>107</red>
+        <green>106</green>
+        <blue>91</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Button">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>214</red>
+        <green>213</green>
+        <blue>183</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Light">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Midlight">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>234</red>
+        <green>234</green>
+        <blue>219</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Dark">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>107</red>
+        <green>106</green>
+        <blue>91</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Mid">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>143</red>
+        <green>142</green>
+        <blue>122</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Text">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>107</red>
+        <green>106</green>
+        <blue>91</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="BrightText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ButtonText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>107</red>
+        <green>106</green>
+        <blue>91</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Base">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>214</red>
+        <green>213</green>
+        <blue>183</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Window">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>214</red>
+        <green>213</green>
+        <blue>183</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="Shadow">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="AlternateBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>214</red>
+        <green>213</green>
+        <blue>183</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipBase">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>255</red>
+        <green>255</green>
+        <blue>220</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="ToolTipText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="255">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+     <colorrole role="PlaceholderText">
+      <brush brushstyle="SolidPattern">
+       <color alpha="128">
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+       </color>
+      </brush>
+     </colorrole>
+    </disabled>
+   </palette>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>10</y>
+      <width>1471</width>
+      <height>981</height>
+     </rect>
+    </property>
+    <property name="palette">
+     <palette>
+      <active>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Light">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Midlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Dark">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>127</red>
+          <green>127</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Mid">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>170</red>
+          <green>170</green>
+          <blue>170</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="BrightText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Shadow">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="AlternateBase">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ToolTipBase">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>220</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ToolTipText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="PlaceholderText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="128">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </active>
+      <inactive>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Light">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Midlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Dark">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>127</red>
+          <green>127</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Mid">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>170</red>
+          <green>170</green>
+          <blue>170</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="BrightText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Shadow">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="AlternateBase">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ToolTipBase">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>220</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ToolTipText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="PlaceholderText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="128">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </inactive>
+      <disabled>
+       <colorrole role="WindowText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>127</red>
+          <green>127</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Button">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Light">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Midlight">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Dark">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>127</red>
+          <green>127</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Mid">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>170</red>
+          <green>170</green>
+          <blue>170</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Text">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>127</red>
+          <green>127</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="BrightText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ButtonText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>127</red>
+          <green>127</green>
+          <blue>127</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Base">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Window">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="Shadow">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="AlternateBase">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>255</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ToolTipBase">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>255</red>
+          <green>255</green>
+          <blue>220</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="ToolTipText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="255">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+       <colorrole role="PlaceholderText">
+        <brush brushstyle="SolidPattern">
+         <color alpha="128">
+          <red>0</red>
+          <green>0</green>
+          <blue>0</blue>
+         </color>
+        </brush>
+       </colorrole>
+      </disabled>
+     </palette>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAsNeeded</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="scrollAreaWidgetContents">
+     <property name="geometry">
+      <rect>
+       <x>-20</x>
+       <y>0</y>
+       <width>1489</width>
+       <height>939</height>
+      </rect>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>1489</width>
+       <height>16777215</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QToolButton" name="toolButton_preImg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>220</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>上一张(A)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_imgdir">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>打开图片文件夹</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_nextImg">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>150</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>下一张(D)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_zoom_in">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>290</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>放大(Space)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_zoom_out">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>360</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>缩小</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_save_path">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>80</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>指定一个保存路径</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_one">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>10</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string> &lt;--- 将图片加入(1)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_one">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>10</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定A类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_two">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>80</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定B类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_two">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>80</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(2)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_three">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>150</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(3)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_three">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>150</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定C类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_four">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>220</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(4)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_four">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>220</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定D类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_five">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>290</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(5)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_five">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>290</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定E类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_six">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>360</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(6)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_six">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>360</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定F类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_seven">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>430</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(7)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_seven">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>430</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定G类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_eight">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>500</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定H类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_eight">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>500</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(8)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_nine">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>570</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定I类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_nine">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>570</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(9)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_ten">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>640</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定J类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_ten">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>640</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(0)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_eleven">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>710</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定K类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_eleven">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>710</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(-)</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_twelve">
+    <property name="geometry">
+     <rect>
+      <x>1610</x>
+      <y>780</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>设定L类的初始值</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_push_twelve">
+    <property name="geometry">
+     <rect>
+      <x>1750</x>
+      <y>780</y>
+      <width>141</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;--- 将图片加入(=)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_cur_img">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>930</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前图片</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_all_img">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>880</y>
+      <width>281</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>总图片</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_savePath">
+    <property name="geometry">
+     <rect>
+      <x>1620</x>
+      <y>970</y>
+      <width>281</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>当前保存路径</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1931</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>toolButton_imgdir</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>load_img_dir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>116</x>
+     <y>103</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>150</x>
+     <y>122</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_nextImg</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>next_img()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>176</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>117</x>
+     <y>691</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_preImg</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>pre_img()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>73</x>
+     <y>246</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>86</x>
+     <y>583</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_zoom_in</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>add_zoom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>42</x>
+     <y>360</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>45</x>
+     <y>372</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_zoom_out</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>subtract_zoom()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>37</x>
+     <y>441</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>33</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_one</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_one()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1773</x>
+     <y>69</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>73</x>
+     <y>868</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_one</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_one()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>185</x>
+     <y>1003</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>238</x>
+     <y>952</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_two</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_two()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1760</x>
+     <y>131</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>369</x>
+     <y>861</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_two</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_two()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>331</x>
+     <y>999</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>494</x>
+     <y>941</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_three</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_three()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1775</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>376</x>
+     <y>959</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_three</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_three()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>470</x>
+     <y>991</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>484</x>
+     <y>871</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_four</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_four()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1818</x>
+     <y>273</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>605</x>
+     <y>940</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_four</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_four()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>603</x>
+     <y>990</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>608</x>
+     <y>866</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_five</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_five()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>744</x>
+     <y>1002</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>754</x>
+     <y>881</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_five</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_five()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1830</x>
+     <y>344</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>751</x>
+     <y>936</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_six</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_six()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1852</x>
+     <y>430</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1862</x>
+     <y>909</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_seven</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_seven()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1879</x>
+     <y>509</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1887</x>
+     <y>928</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_eight</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_eight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1867</x>
+     <y>578</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1869</x>
+     <y>898</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_nine</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_nine()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1800</x>
+     <y>633</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1802</x>
+     <y>906</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_ten</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_ten()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1788</x>
+     <y>711</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1796</x>
+     <y>897</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_eleven</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_eleven()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1796</x>
+     <y>785</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1838</x>
+     <y>889</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_twelve</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_twelve()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1839</x>
+     <y>839</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1842</x>
+     <y>898</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_six</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_six()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>834</x>
+     <y>951</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>115</x>
+     <y>895</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_seven</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_seven()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>981</x>
+     <y>963</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>883</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_eight</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_eight()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1112</x>
+     <y>960</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>84</x>
+     <y>844</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_nine</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_nine()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1243</x>
+     <y>973</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>102</x>
+     <y>845</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_ten</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_ten()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1344</x>
+     <y>944</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>136</x>
+     <y>864</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_eleven</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_eleven()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1551</x>
+     <y>963</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1749</x>
+     <y>917</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_push_twelve</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>move_twelve()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1698</x>
+     <y>957</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1760</x>
+     <y>954</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_save_path</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>input_save_path()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>110</x>
+     <y>140</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>48</x>
+     <y>603</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>load_img_dir()</slot>
+  <slot>next_img()</slot>
+  <slot>pre_img()</slot>
+  <slot>add_zoom()</slot>
+  <slot>subtract_zoom()</slot>
+  <slot>input_one()</slot>
+  <slot>move_one()</slot>
+  <slot>input_two()</slot>
+  <slot>move_two()</slot>
+  <slot>input_three()</slot>
+  <slot>move_three()</slot>
+  <slot>input_four()</slot>
+  <slot>move_four()</slot>
+  <slot>move_five()</slot>
+  <slot>input_five()</slot>
+  <slot>input_six()</slot>
+  <slot>input_seven()</slot>
+  <slot>input_eight()</slot>
+  <slot>input_nine()</slot>
+  <slot>input_ten()</slot>
+  <slot>input_eleven()</slot>
+  <slot>input_twelve()</slot>
+  <slot>move_six()</slot>
+  <slot>move_seven()</slot>
+  <slot>move_eight()</slot>
+  <slot>move_nine()</slot>
+  <slot>move_ten()</slot>
+  <slot>move_eleven()</slot>
+  <slot>move_twelve()</slot>
+  <slot>input_save_path()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,14 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+    <file alias="icons/open.png">icons/open.png</file>
+    <file alias="icons/prev.png">icons/prev.png</file>
+    <file alias="icons/next.png">icons/next.png</file>
+    <file alias="icons/edit.png">icons/edit.png</file>
+    <file alias="icons/objects.png">icons/objects.png</file>
+    <file alias="icons/save.png">icons/save.png</file>
+    <file alias="icons/delete.png">icons/delete.png</file>
+    <file alias="icons/done.png">icons/done.png</file>
+    <file alias="icons/copy.png">icons/copy.png</file>
+</qresource>
+</RCC>

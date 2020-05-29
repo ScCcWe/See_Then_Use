@@ -1,0 +1,31 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+<qresource>
+    <file alias="icons/delete.png">icons/delete.png</file>
+    <file alias="icons/done.png">icons/done.png</file>
+    <file alias="icons/edit.png">icons/edit.png</file>
+    <file alias="icons/next.png">icons/next.png</file>
+    <file alias="icons/objects.png">icons/objects.png</file>
+    <file alias="icons/open.png">icons/open.png</file>
+    <file alias="icons/prev.png">icons/prev.png</file>
+    <file alias="icons/save.png">icons/save.png</file>
+    <file alias="icons/save-as.png">icons/save-as.png</file>
+    <file alias="icons/zoom-in.png">icons/zoom-in.png</file>
+    <file alias="icons/zoom-out.png">icons/zoom-out.png</file>
+    <file alias="icons/jsonFile.png">icons/jsonFile.png</file>
+    <file alias="icons/pop.jpg">icons/pop.jpg</file>
+    <file alias="icons/Burger.png">icons/Burger.png</file>
+    <file alias="icons/Chicken.png">icons/Chicken.png</file>
+    <file alias="icons/Cup.png">icons/Cup.png</file>
+    <file alias="icons/Fruits.png">icons/Fruits.png</file>
+    <file alias="icons/Grapes.png">icons/Grapes.png</file>
+    <file alias="icons/Lettuce.png">icons/Lettuce.png</file>
+    <file alias="icons/Wine.png">icons/Wine.png</file>
+    <file alias="icons/Rice.png">icons/Rice.png</file>
+    <file alias="icons/SodaCan.png">icons/SodaCan.png</file>
+    <file alias="icons/Soup.png">icons/Soup.png</file>
+    <file alias="icons/Steak.png">icons/Steak.png</file>
+    <file alias="icons/Strawberry.png">icons/Strawberry.png</file>
+    <file alias="icons/Watermelon.png">icons/Watermelon.png</file>
+</qresource>
+</RCC>

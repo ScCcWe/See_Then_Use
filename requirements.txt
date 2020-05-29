@@ -1,5 +1,10 @@
 autopep8==1.5.1
+colorama==0.4.3
 natsort==7.0.1
 Pillow==7.1.1
+prettytable==0.7.2
 pycodestyle==2.5.0
+PyQt5==5.14.2
+PyQt5-sip==12.7.2
+PyQt5-stubs==5.14.2.2
 tqdm==4.45.0

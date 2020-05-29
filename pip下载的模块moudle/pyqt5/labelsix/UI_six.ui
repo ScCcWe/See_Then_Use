@@ -1,0 +1,968 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1804</width>
+    <height>1050</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>双图标记工具V1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QScrollArea" name="scrollArea">
+      <property name="widgetResizable">
+       <bool>true</bool>
+      </property>
+      <widget class="QWidget" name="scrollAreaWidgetContents">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1506</width>
+         <height>945</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_dirName">
+      <property name="text">
+       <string>当前图片处理路径</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="contextMenuPolicy">
+    <enum>Qt::DefaultContextMenu</enum>
+   </property>
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="toolTip">
+    <string/>
+   </property>
+   <property name="toolTipDuration">
+    <number>-1</number>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="movable">
+    <bool>false</bool>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>32</width>
+     <height>32</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <property name="floatable">
+    <bool>true</bool>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_root"/>
+   <addaction name="action_pre"/>
+   <addaction name="action_next"/>
+   <addaction name="action_save"/>
+   <addaction name="action_rect"/>
+   <addaction name="separator"/>
+   <addaction name="action_edit"/>
+   <addaction name="action_delete"/>
+   <addaction name="action_copy"/>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1804</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_5">
+    <property name="title">
+     <string>快捷键总览</string>
+    </property>
+    <addaction name="action_root"/>
+    <addaction name="action_pre"/>
+    <addaction name="action_next"/>
+    <addaction name="action_save"/>
+    <addaction name="action_rect"/>
+    <addaction name="action_edit"/>
+    <addaction name="action_delete"/>
+    <addaction name="action_autosave"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>视图</string>
+    </property>
+    <addaction name="action_autosave"/>
+    <addaction name="action_delete"/>
+    <addaction name="action_copy"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="action_root"/>
+    <addaction name="action_save"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+   <addaction name="menu_5"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockWidget_4">
+   <property name="mouseTracking">
+    <bool>false</bool>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="features">
+    <set>QDockWidget::NoDockWidgetFeatures</set>
+   </property>
+   <property name="windowTitle">
+    <string>标注属性</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_4">
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*逆光：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="0,0">
+           <item>
+            <widget class="QPushButton" name="pushButton_backlight_yes">
+             <property name="text">
+              <string>逆光</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_backlight_no">
+             <property name="text">
+              <string>不逆光</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*手持时是否带手套：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <widget class="QPushButton" name="pushButton_hasGlove_yes">
+             <property name="text">
+              <string>带</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_hasGlove_no">
+             <property name="text">
+              <string>不带</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*设备清晰度:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QPushButton" name="pushButton_resolution_clear">
+             <property name="text">
+              <string>清晰</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_resolution_blur">
+             <property name="text">
+              <string>模糊</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPushButton" name="pushButton_resolution_dark">
+             <property name="text">
+              <string>偏暗</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_resolution_invisible">
+             <property name="text">
+              <string>看不清</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*是否和背景融为一体:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_9">
+           <item>
+            <widget class="QPushButton" name="pushButton_immerse_yes">
+             <property name="text">
+              <string>是</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_immerse_no">
+             <property name="text">
+              <string>否</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*扫码枪是否亮灯:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_10">
+           <item>
+            <widget class="QPushButton" name="pushButton_lightOn_on">
+             <property name="text">
+              <string>亮灯</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_lightOn_off">
+             <property name="text">
+              <string>不亮灯</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*扫码窗口露出比例:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="pushButton_integrity_full">
+             <property name="text">
+              <string>完整</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_integrity_complete">
+             <property name="text">
+              <string>超过80%</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_5">
+           <item>
+            <widget class="QPushButton" name="pushButton_integrity_incomplete">
+             <property name="text">
+              <string>不到80%</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_integrity_nodevice">
+             <property name="text">
+              <string>无支付设备</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*设备:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <widget class="QPushButton" name="pushButton_angle_front">
+             <property name="text">
+              <string>正面</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_angle_side">
+             <property name="text">
+              <string>侧面</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget_5">
+   <property name="features">
+    <set>QDockWidget::DockWidgetFloatable|QDockWidget::DockWidgetMovable</set>
+   </property>
+   <property name="windowTitle">
+    <string>文件列表</string>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_6">
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout" stretch="1,5">
+       <item>
+        <widget class="QLabel" name="label_one">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;当前数量&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_all">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;/ 总数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QListWidget" name="listWidget"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <action name="action_root">
+   <property name="checked">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开需要标注的文件夹</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+R</string>
+   </property>
+   <property name="priority">
+    <enum>QAction::NormalPriority</enum>
+   </property>
+  </action>
+  <action name="action_pre">
+   <property name="text">
+    <string>上一张</string>
+   </property>
+   <property name="shortcut">
+    <string>A</string>
+   </property>
+  </action>
+  <action name="action_next">
+   <property name="text">
+    <string>下一张</string>
+   </property>
+   <property name="shortcut">
+    <string>D</string>
+   </property>
+  </action>
+  <action name="action_rect">
+   <property name="text">
+    <string>创建模式</string>
+   </property>
+   <property name="shortcut">
+    <string>W</string>
+   </property>
+  </action>
+  <action name="action_edit">
+   <property name="text">
+    <string>编辑模式</string>
+   </property>
+   <property name="shortcut">
+    <string>S</string>
+   </property>
+  </action>
+  <action name="action_save">
+   <property name="text">
+    <string>保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_delete">
+   <property name="text">
+    <string>删除框图</string>
+   </property>
+   <property name="toolTip">
+    <string>删除一个指定框图</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="action_autosave">
+   <property name="text">
+    <string>自动保存</string>
+   </property>
+   <property name="toolTip">
+    <string>自动保存</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_copy">
+   <property name="text">
+    <string>复制框图</string>
+   </property>
+   <property name="toolTip">
+    <string>右击复制框选的图</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <zorder>dockWidget_5</zorder>
+  <zorder>dockWidget_4</zorder>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>action_root</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>select_root_dir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1249</x>
+     <y>768</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_next</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>next_dir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1210</x>
+     <y>850</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_pre</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>last_dir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1220</x>
+     <y>803</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_rect</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>mode_to_create()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>957</x>
+     <y>545</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_edit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>mode_to_edit()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>957</x>
+     <y>545</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_save</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>save_current_json()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>957</x>
+     <y>545</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_backlight_yes</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>backlight_yes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1616</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1589</x>
+     <y>31</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_backlight_no</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>backlight_no()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1697</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1593</x>
+     <y>67</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_hasGlove_yes</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hasGlove_yes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1616</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1591</x>
+     <y>125</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_hasGlove_no</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hasGlove_no()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1697</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1590</x>
+     <y>152</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_resolution_clear</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>resolution_clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1616</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1591</x>
+     <y>192</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_resolution_blur</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>resolution_blur()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1697</x>
+     <y>232</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1594</x>
+     <y>224</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_resolution_dark</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>resolution_dark()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1616</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1593</x>
+     <y>259</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_resolution_invisible</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>resolution_invisible()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1697</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1594</x>
+     <y>297</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_immerse_yes</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>immerse_yes()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1616</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1594</x>
+     <y>326</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_immerse_no</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>immerse_no()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1697</x>
+     <y>317</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1592</x>
+     <y>361</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_lightOn_on</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lightOn_on()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1616</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1593</x>
+     <y>396</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_lightOn_off</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>lightOn_off()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1697</x>
+     <y>371</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1591</x>
+     <y>430</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_integrity_complete</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>integrity_complete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1691</x>
+     <y>413</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1591</x>
+     <y>458</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_integrity_incomplete</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>integrity_incomplete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1616</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1591</x>
+     <y>490</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_integrity_nodevice</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>integrity_nodevice()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1744</x>
+     <y>456</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1594</x>
+     <y>527</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_delete</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>deleteSelectedShape()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>901</x>
+     <y>524</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>action_copy</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>copySelectedShape()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>901</x>
+     <y>524</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_integrity_full</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>integrity_full()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1558</x>
+     <y>415</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1520</x>
+     <y>408</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_angle_front</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>angle_front()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1547</x>
+     <y>502</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1524</x>
+     <y>507</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_angle_side</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>angle_side()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1715</x>
+     <y>498</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1526</x>
+     <y>538</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>select_root_dir()</slot>
+  <slot>last_dir()</slot>
+  <slot>next_dir()</slot>
+  <slot>mode_to_create()</slot>
+  <slot>mode_to_edit()</slot>
+  <slot>backlight_yes()</slot>
+  <slot>backlight_no()</slot>
+  <slot>hasGlove_yes()</slot>
+  <slot>hasGlove_no()</slot>
+  <slot>resolution_clear()</slot>
+  <slot>resolution_blur()</slot>
+  <slot>resolution_dark()</slot>
+  <slot>resolution_invisible()</slot>
+  <slot>immerse_yes()</slot>
+  <slot>immerse_no()</slot>
+  <slot>lightOn_on()</slot>
+  <slot>lightOn_off()</slot>
+  <slot>integrity_full()</slot>
+  <slot>integrity_incomplete()</slot>
+  <slot>integrity_nodevice()</slot>
+  <slot>deleteSelectedShape()</slot>
+  <slot>save_current_json()</slot>
+  <slot>copySelectedShape()</slot>
+  <slot>integrity_complete()</slot>
+  <slot>angle_front()</slot>
+  <slot>angle_side()</slot>
+ </slots>
+</ui>

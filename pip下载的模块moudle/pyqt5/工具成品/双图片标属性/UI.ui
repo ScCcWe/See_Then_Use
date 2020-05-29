@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1001</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>双图标记工具V1.0</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_img1">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图片</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_dirName">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>920</y>
+      <width>521</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图片名</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_img2">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>0</y>
+      <width>800</width>
+      <height>800</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>图片</string>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_hard1">
+    <property name="geometry">
+     <rect>
+      <x>1682</x>
+      <y>570</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>大</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_hard2">
+    <property name="geometry">
+     <rect>
+      <x>1760</x>
+      <y>570</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>中</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sha1">
+    <property name="geometry">
+     <rect>
+      <x>1682</x>
+      <y>455</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>清晰</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_sha2">
+    <property name="geometry">
+     <rect>
+      <x>1763</x>
+      <y>455</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>不清晰</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>1682</x>
+      <y>430</y>
+      <width>121</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*阴影是否清晰：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_shadow">
+    <property name="geometry">
+     <rect>
+      <x>1810</x>
+      <y>430</y>
+      <width>30</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>状态2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>1682</x>
+      <y>486</y>
+      <width>90</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*阴影深浅:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lightSource">
+    <property name="geometry">
+     <rect>
+      <x>1810</x>
+      <y>490</y>
+      <width>30</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>状态3</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_pro1">
+    <property name="geometry">
+     <rect>
+      <x>1680</x>
+      <y>360</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>合格</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_pro2">
+    <property name="geometry">
+     <rect>
+      <x>1780</x>
+      <y>360</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>不合格</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>1682</x>
+      <y>542</y>
+      <width>108</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt; font-weight:600; color:#aa0000;&quot;&gt;*阴影大小:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_hardSample">
+    <property name="geometry">
+     <rect>
+      <x>1810</x>
+      <y>542</y>
+      <width>30</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>状态4</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_lig1">
+    <property name="geometry">
+     <rect>
+      <x>1682</x>
+      <y>511</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>深阴影</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_lig2">
+    <property name="geometry">
+     <rect>
+      <x>1840</x>
+      <y>510</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>浅阴影</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_problems">
+    <property name="geometry">
+     <rect>
+      <x>1790</x>
+      <y>330</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>状态1</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>1680</x>
+      <y>220</y>
+      <width>191</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot;&gt;&lt;tr&gt;&lt;td width=&quot;193&quot;&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;内容是否一致&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;内容是否模糊&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;颜色亮度是否一致&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;&lt;p&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;阴影部分是否有反光&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;p&gt;有一个就是不合格：&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1679</x>
+      <y>741</y>
+      <width>151</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>选择文件夹</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_one">
+    <property name="geometry">
+     <rect>
+      <x>1680</x>
+      <y>810</y>
+      <width>48</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;当前数量&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_all">
+    <property name="geometry">
+     <rect>
+      <x>1734</x>
+      <y>810</y>
+      <width>46</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:11pt;&quot;&gt;/ 总数&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>1680</x>
+      <y>849</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1763</x>
+      <y>848</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>跳转到</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>1761</x>
+      <y>771</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>下一张（D）</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1680</x>
+      <y>771</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>上一张（A）</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_lig2_2">
+    <property name="geometry">
+     <rect>
+      <x>1760</x>
+      <y>510</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>中等阴影</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>820</y>
+      <width>1531</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;清晰的定义为：手动描边，能把阴影区域的轮廓画出来。非清晰的阴影，轮廓模糊，从深到浅有明显亮度渐变的；清晰的阴影，例如手机、手掌的影子，轮廓规则。如果出现阴影内部有深浅渐变，但轮廓清晰规则的，或者有一侧明显轮廓一侧模糊的，以轮廓为准，视为清晰。&lt;/p&gt;&lt;p&gt;判断阴影的深浅情况，主要观察同一材质表面，阴影内和非阴影区域的对比度情况，对于难以归类到深或浅的，归于中等程度。&lt;/p&gt;&lt;p&gt;定性记录阴影占画面面积，只考虑两张图差异部分的阴影，对于物体本身出现的背影、明暗起伏，不予考虑。分为：大（超过2/3）、中、小（不足1/3）&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_hard2_2">
+    <property name="geometry">
+     <rect>
+      <x>1840</x>
+      <y>570</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>小</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>1690</x>
+      <y>90</y>
+      <width>221</width>
+      <height>111</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>不合格的不需要标注下面3项</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton">
+    <property name="geometry">
+     <rect>
+      <x>1680</x>
+      <y>890</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>左图细节</string>
+    </property>
+   </widget>
+   <widget class="QToolButton" name="toolButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1770</x>
+      <y>890</y>
+      <width>71</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>右图细节</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>810</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>正常图片</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>990</x>
+      <y>810</y>
+      <width>54</width>
+      <height>12</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>阴影图片</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>1700</x>
+      <y>660</y>
+      <width>91</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>交换阴影图片</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>select_root_dir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1696</x>
+     <y>786</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1249</x>
+     <y>768</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>last_dir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1710</x>
+     <y>816</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1220</x>
+     <y>803</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>next_dir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1816</x>
+     <y>816</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1210</x>
+     <y>850</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>jump_to_dir()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1785</x>
+     <y>893</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1203</x>
+     <y>916</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_pro1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>hege()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1724</x>
+     <y>397</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1650</x>
+     <y>339</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_pro2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>buhege()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1819</x>
+     <y>395</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1881</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_sha1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>qingxi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1715</x>
+     <y>484</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1654</x>
+     <y>477</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_sha2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>buqingxi()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1823</x>
+     <y>488</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1884</x>
+     <y>472</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_lig1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>shenyinying()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1722</x>
+     <y>551</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1659</x>
+     <y>545</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_lig2_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>zhongdengyinying()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1788</x>
+     <y>543</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1618</x>
+     <y>445</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_lig2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>qianyinying()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1896</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1875</x>
+     <y>418</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_hard1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>da()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1707</x>
+     <y>611</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1707</x>
+     <y>635</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_hard2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>zhong()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1810</x>
+     <y>613</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1810</x>
+     <y>646</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_hard2_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>xiao()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1866</x>
+     <y>603</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1867</x>
+     <y>646</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_detail()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1704</x>
+     <y>932</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1609</x>
+     <y>939</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toolButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>show_detail_right()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1788</x>
+     <y>932</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1863</x>
+     <y>930</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_5</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>changeShadow()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1744</x>
+     <y>690</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1675</x>
+     <y>688</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>select_root_dir()</slot>
+  <slot>last_dir()</slot>
+  <slot>next_dir()</slot>
+  <slot>jump_to_dir()</slot>
+  <slot>no_shadow()</slot>
+  <slot>shadow()</slot>
+  <slot>one()</slot>
+  <slot>many()</slot>
+  <slot>yes()</slot>
+  <slot>no()</slot>
+  <slot>qualify()</slot>
+  <slot>notQualify()</slot>
+  <slot>pro1()</slot>
+  <slot>pro2()</slot>
+  <slot>pro3()</slot>
+  <slot>pro4()</slot>
+  <slot>pro5()</slot>
+  <slot>hege()</slot>
+  <slot>buhege()</slot>
+  <slot>slot2()</slot>
+  <slot>qingxi()</slot>
+  <slot>buqingxi()</slot>
+  <slot>shenyinying()</slot>
+  <slot>zhongdengyinying()</slot>
+  <slot>qianyinying()</slot>
+  <slot>da()</slot>
+  <slot>zhong()</slot>
+  <slot>xiao()</slot>
+  <slot>show_detail()</slot>
+  <slot>show_detail_right()</slot>
+  <slot>changeShadow()</slot>
+ </slots>
+</ui>
