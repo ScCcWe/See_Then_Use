@@ -26,7 +26,7 @@
 - [输出着色-colorama](https://github.com/ScCcWe/See_Then_Use/blob/master/pip%E4%B8%8B%E8%BD%BD%E7%9A%84%E6%A8%A1%E5%9D%97moudle/colorama/use.py)  
 
 `数据结构`
-- [python环境搭建](https://github.com/ScCcWe/See_Then_Use/tree/master/data_structure)
+- [python实现数据结构](https://github.com/ScCcWe/See_Then_Use/tree/master/data_structure)
 
 `《流畅的python》读书笔记：`
 - [装饰器](https://github.com/ScCcWe/See_Then_Use/blob/master/%E6%B5%81%E7%95%85%E7%9A%84python%E8%AF%BB%E4%B9%A6%E8%AE%B0%E5%BD%95/%E8%A3%85%E9%A5%B0%E5%99%A8.md)
