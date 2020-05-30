@@ -245,7 +245,7 @@ def code_to_chars(code):
 
 code_to_chars(40)
 ```
-![Image](https://github.com/ScCcWe/See_Then_Use/tree/master/img/测试用例结果.png)  
+![输出示例](https://github.com/ScCcWe/See_Then_Use/blob/master/img/%E6%B5%8B%E8%AF%95%E7%94%A8%E4%BE%8B%E7%BB%93%E6%9E%9C.png)  
 
 输出为一个背景颜色，说明上面的分析是对的。其实更加实际的情况是，你根据这个测试用例，去推测出源码的逻辑。而不是先推测逻辑，再去写测试用例。
 这里为了分析的连贯性，我先写好了逻辑。  
